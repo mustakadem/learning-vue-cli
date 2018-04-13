@@ -1,5 +1,14 @@
 <template>
   <div>
+    <h1>Menu principal</h1>
+    <ul>
+      <li><a href="">Enlace</a></li>
+      <li><a href="">Enlace</a></li>
+      <li><a href="">Enlace</a></li>
+      <li><a href="">Enlace</a></li>
+      <li><a href="">Enlace</a></li>
+      <li><a href="">Enlace</a></li>
+    </ul>
       <h2>Componente persona</h2>
     <persona></persona>
     <hr>

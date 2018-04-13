@@ -45,9 +45,9 @@
   }
 </script>
 
-<style>
+<style scoped>
   li a{
-    color:darkblue;
+    color:red;
     font-weight: bold;
     text-decoration: none;
   }
