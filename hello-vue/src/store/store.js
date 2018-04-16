@@ -18,6 +18,10 @@ export const store = new Vuex.Store({
     tareasCompletadas: (state) => {
       return state.tareas.filter((tarea) => tarea.completado).length;
     }
+  },
+  mutations:{
+    aumentar: (state) => state.cantidad++,
+    reducir: (state) => state.cantidad--,
   }
 });
 

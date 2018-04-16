@@ -30,11 +30,11 @@
     <!--&lt;!&ndash;</contador>&ndash;&gt;-->
 
 
-    <!--&lt;!&ndash;Con Vuex&ndash;&gt;-->
+    <!--Con Vuex-->
 
-    <!--<contador></contador>-->
+    <contador></contador>
 
-    <h1>{{nombre}} {{apellido}}</h1>
+    <!--<h1>{{nombre}} {{apellido}}</h1>-->
   </div>
 
 </template>
