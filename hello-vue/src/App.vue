@@ -19,21 +19,22 @@
     <!--<h2>Componente tarea</h2>-->
 
     <!--<tareas></tareas>-->
-    <hr>
-    <h2>Entendiendo vuex</h2>
+    <!--<hr>-->
+    <!--<h2>Entendiendo vuex</h2>-->
 
-    <!--Sin vuex-->
-    <!--<contador :cantidad="cantidad"-->
-               <!--@aumentar="cantidad++"-->
-                <!--@reducir="cantidad&#45;&#45;">-->
+    <!--&lt;!&ndash;Sin vuex&ndash;&gt;-->
+    <!--&lt;!&ndash;<contador :cantidad="cantidad"&ndash;&gt;-->
+               <!--&lt;!&ndash;@aumentar="cantidad++"&ndash;&gt;-->
+                <!--&lt;!&ndash;@reducir="cantidad&#45;&#45;">&ndash;&gt;-->
 
-    <!--</contador>-->
+    <!--&lt;!&ndash;</contador>&ndash;&gt;-->
 
 
-    <!--Con Vuex-->
+    <!--&lt;!&ndash;Con Vuex&ndash;&gt;-->
 
-    <contador></contador>
+    <!--<contador></contador>-->
 
+    <h1>{{nombre}} {{apellido}}</h1>
   </div>
 
 </template>
@@ -43,13 +44,21 @@
   import elemento from './component/elemento'
   import tareas from './component/tareas'
   import contador from './component/contador'
+  import {mapState} from 'vuex';
+
 export default {
   components:{persona,elemento,tareas,contador},
   data () {
     return {
         cantidad: 0,
     }
-  }
+  },
+  // computed: mapState({
+  //   nombre: (state) => state.nombre,
+  //
+  // })
+
+  computed: mapState(['nombre','apellido'])
 }
 </script>
 

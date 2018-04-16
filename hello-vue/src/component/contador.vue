@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Contador: {{cantidad}}</h1>
+    <h1>Contador: {{mostrarCantidad}}</h1>
 
     <button @click="aumentar">Aumentar</button>
     <button @click="reducir">Reducir</button>
@@ -23,7 +23,7 @@
         }
     },
     computed:{
-        cantidad(){
+        mostrarCantidad(){
           return this.$store.state.cantidad;
         }
     }

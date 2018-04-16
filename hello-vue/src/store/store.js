@@ -6,6 +6,8 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
   state: {
     cantidad: 0,
+    nombre: 'musta',
+    apellido: 'kadem',
   }
 });
 
