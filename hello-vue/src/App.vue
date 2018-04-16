@@ -18,7 +18,7 @@
     <!--<hr>-->
     <!--<h2>Componente tarea</h2>-->
 
-    <!--<tareas></tareas>-->
+    <tareas></tareas>
     <!--<hr>-->
     <!--<h2>Entendiendo vuex</h2>-->
 
@@ -44,6 +44,7 @@
   import elemento from './component/elemento'
   import tareas from './component/tareas'
   import contador from './component/contador'
+
   import {mapState} from 'vuex';
 
 export default {
