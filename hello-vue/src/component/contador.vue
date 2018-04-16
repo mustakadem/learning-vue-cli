@@ -2,8 +2,8 @@
   <div>
     <h1>Contador: {{cantidad}}</h1>
 
-    <button @click="aumentarAsync">Aumentar</button>
-    <button @click="reducirAsync">Reducir</button>
+    <button @click="aumentarAsync(12)">Aumentar</button>
+    <button @click="reducirAsync({cantidad:15})">Reducir</button>
 
   </div>
 </template>
