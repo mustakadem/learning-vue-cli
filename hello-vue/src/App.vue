@@ -36,8 +36,14 @@
 
     <!--<h1>{{nombre}} {{apellido}}</h1>-->
 
-    <carro></carro>
-    <productos></productos>
+    <!--<carro></carro>-->
+    <!--<productos></productos>-->
+
+    <h1>Rutas con Vue Router</h1>
+      <router-link to="/">Home</router-link>
+      <router-link to="/contacto">Contacto</router-link>
+    <hr>
+    <router-view></router-view>
   </div>
 
 </template>
@@ -55,17 +61,17 @@
 
 export default {
   components:{persona,elemento,tareas,contador,productos,carro},
-  data () {
-    return {
-        cantidad: 0,
-    }
-  },
+  // data () {
+  //   return {
+  //       cantidad: 0,
+  //   }
+  // },
   // computed: mapState({
   //   nombre: (state) => state.nombre,
   //
   // })
 
-  computed: mapState(['nombre','apellido'])
+  // computed: mapState(['nombre','apellido'])
 }
 </script>
 
