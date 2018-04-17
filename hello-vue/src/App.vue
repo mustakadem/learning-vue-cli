@@ -18,7 +18,7 @@
     <!--<hr>-->
     <!--<h2>Componente tarea</h2>-->
 
-    <tareas></tareas>
+    <!--<tareas></tareas>-->
     <!--<hr>-->
     <!--<h2>Entendiendo vuex</h2>-->
 
@@ -32,23 +32,29 @@
 
     <!--Con Vuex-->
 
-    <contador></contador>
+    <!--<contador></contador>-->
 
     <!--<h1>{{nombre}} {{apellido}}</h1>-->
+
+    <carro></carro>
+    <productos></productos>
   </div>
 
 </template>
 
 <script>
-  import persona from './component/persona'
-  import elemento from './component/elemento'
-  import tareas from './component/tareas'
-  import contador from './component/contador'
+  import persona from './component/persona';
+  import elemento from './component/elemento';
+  import tareas from './component/tareas';
+  import contador from './component/contador';
+  import productos from './component/Productos';
+  import carro from './component/Carro';
+
 
   import {mapState} from 'vuex';
 
 export default {
-  components:{persona,elemento,tareas,contador},
+  components:{persona,elemento,tareas,contador,productos,carro},
   data () {
     return {
         cantidad: 0,
