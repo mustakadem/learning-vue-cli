@@ -40,8 +40,16 @@
     <!--<productos></productos>-->
 
     <h1>Rutas con Vue Router</h1>
-      <router-link to="/">Home</router-link>
-      <router-link to="/contacto">Contacto</router-link>
+      <router-link to="/" active-class="activo" tag="li">
+        <a>Home</a>
+      </router-link>
+      <router-link to="/contacto"  active-class="activo" tag="li">
+        <a>Contacto</a>
+      </router-link>
+
+    <router-link to="/user/77"  active-class="activo" tag="li">
+      <a>User</a>
+    </router-link>
     <hr>
     <router-view></router-view>
   </div>
@@ -76,5 +84,7 @@ export default {
 </script>
 
 <style>
-
+  .activo a{
+    color:red;
+  }
 </style>
