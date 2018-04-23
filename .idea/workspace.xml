@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b0d80f6-4ca0-4d8c-85b0-d77f276320aa" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/hello-vue/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-vue/src/component/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/hello-vue/src/component/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-vue/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/hello-vue/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rutas/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/rutas/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rutas/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/rutas/src/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,17 +20,8 @@
       <file leaf-file-name="home.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rutas/src/component/home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Usuario.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rutas/src/component/Usuario.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="85">
+              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -50,11 +38,32 @@
       <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rutas/src/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="306">
+              <caret line="18" column="81" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rutas/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Contacto.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rutas/src/component/Contacto.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -64,8 +73,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -95,11 +104,12 @@
         <option value="$PROJECT_DIR$/rutas/src/component/UsuarioBio.vue" />
         <option value="$PROJECT_DIR$/rutas/src/component/UsuarioFotos.vue" />
         <option value="$PROJECT_DIR$/rutas/src/App.vue" />
-        <option value="$PROJECT_DIR$/rutas/src/main.js" />
-        <option value="$PROJECT_DIR$/rutas/src/component/home.vue" />
         <option value="$PROJECT_DIR$/rutas/src/component/Equipo.vue" />
         <option value="$PROJECT_DIR$/rutas/src/component/Usuario.vue" />
+        <option value="$PROJECT_DIR$/rutas/src/component/home.vue" />
+        <option value="$PROJECT_DIR$/rutas/src/component/Contacto.vue" />
         <option value="$PROJECT_DIR$/rutas/src/routes.js" />
+        <option value="$PROJECT_DIR$/rutas/src/main.js" />
       </list>
     </option>
   </component>
@@ -222,7 +232,7 @@
       <workItem from="1523612435351" duration="9514000" />
       <workItem from="1523862906063" duration="7953000" />
       <workItem from="1523949795886" duration="8822000" />
-      <workItem from="1524462549534" duration="10506000" />
+      <workItem from="1524462549534" duration="12947000" />
     </task>
     <task id="LOCAL-00001" summary="comprendiendo render function">
       <created>1523616366962</created>
@@ -329,11 +339,25 @@
       <option name="project" value="LOCAL" />
       <updated>1524480705847</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="rutas -&gt; redireccion y alias">
+      <created>1524481223460</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1524481223460</updated>
+    </task>
+    <task id="LOCAL-00017" summary="rutas -&gt; pasando propiedades sin dependecia directa de la ruta">
+      <created>1524484332390</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1524484332391</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37539000" />
+    <option name="totallyTimeSpent" value="39980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="676" y="0" width="697" height="735" extended-state="0" />
@@ -346,7 +370,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3283582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32669982" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32669982" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -379,7 +403,9 @@
     <MESSAGE value="navegacion en rutas anidadas" />
     <MESSAGE value="navegacion en rutas anidadas-&gt;atributo name" />
     <MESSAGE value="nombre de vistas" />
-    <option name="LAST_COMMIT_MESSAGE" value="nombre de vistas" />
+    <MESSAGE value="rutas -&gt; redireccion y alias" />
+    <MESSAGE value="rutas -&gt; pasando propiedades sin dependecia directa de la ruta" />
+    <option name="LAST_COMMIT_MESSAGE" value="rutas -&gt; pasando propiedades sin dependecia directa de la ruta" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -624,16 +650,6 @@
         <state relative-caret-position="-102" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rutas/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rutas/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -682,13 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rutas/src/component/home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rutas/src/component/Usuario.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -703,10 +712,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rutas/src/component/home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rutas/src/component/Contacto.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rutas/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rutas/src/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="306">
+          <caret line="18" column="81" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
