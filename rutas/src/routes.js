@@ -7,10 +7,10 @@ import UsuarioBio from './component/UsuarioBio';
 
 export const routes = [
   {path: '/', component: Home},
-  {path: '/equipo/:id', component:Equipo, children: [
-      {path:'', component: Usuario, children:[
-          {path:'fotos', component:UsuarioFotos},
-          {path:'bio', component:UsuarioBio}
+  {path: '/equipo/:id', component:Equipo,  children: [
+      {path:'', component: Usuario, name:'equipo', children:[
+          {path:'fotos', component:UsuarioFotos, name:'fotos'},
+          {path:'bio', component:UsuarioBio, name:'bio'}
 
         ]},
 
