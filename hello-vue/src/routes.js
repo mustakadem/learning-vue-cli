@@ -8,7 +8,7 @@ export const routes = [
   {path: '/', component: Home},
   {path: '/contacto', component: Contact},
   {path: '/user/:id', component: User},
-  {path: '/equipo', component: Equipo,
+  {path: '/equipo/', component: Equipo,
     children:[
       {path: 'musta', component: EquipoMusta}
     ]},

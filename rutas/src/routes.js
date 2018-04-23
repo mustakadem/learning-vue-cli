@@ -6,7 +6,8 @@ import UsuarioBio from './component/UsuarioBio';
 
 
 export const routes = [
-  {path: '/', component: Home},
+  {path: '/', component: Home, name:'home'},
+  {path: '/prueba', alias:'/otraprueba' , redirect:{name:'home'} , component: Home},
   {path: '/equipo/:id', component:Equipo,  children: [
       {path: '', components:{
         default:Usuario,
