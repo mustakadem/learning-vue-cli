@@ -3,6 +3,7 @@ import Equipo from './component/Equipo';
 import Usuario from './component/Usuario';
 import UsuarioFotos from './component/UsuarioFotos';
 import UsuarioBio from './component/UsuarioBio';
+import Contacto from './component/Contacto';
 
 
 export const routes = [
@@ -14,5 +15,6 @@ export const routes = [
           bio: UsuarioBio,
           fotos: UsuarioFotos
         },name:'equipo'}
-    ] }
+    ] },
+  {path: '/contacto', component:Contacto, name:'contacto', props:{newsletter:true}}
 ];
