@@ -2,7 +2,10 @@
   <section>
     <button @click="cambiar">Cambiar Auth</button>
     <hr>
-    <router-view></router-view>
+    <transition>
+      <router-view></router-view>
+    </transition>
+
 
   </section>
 </template>

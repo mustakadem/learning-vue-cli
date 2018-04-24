@@ -20,7 +20,19 @@
 <script>
   export default {
     name: "Contacto",
-    props:['newsletter']
+    props:['newsletter'],
+    data(){
+      return {
+        numero:null
+      }
+    },
+    beforeRouteEnter:((to,from,next)=>{
+      setTimeout(()=> {
+        next((vm)=>{
+          vm.numero = Math.floor(Math.random()*1000);
+        })
+      },2000)
+    }),
   }
 </script>
 

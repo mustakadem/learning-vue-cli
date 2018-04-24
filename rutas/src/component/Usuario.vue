@@ -3,6 +3,7 @@
   <h1>El identificador es: {{$route.params.id}}</h1>
   <h2>Musta Kadem</h2>
   <h5>musta@gmail.com</h5>
+  <pre v-text="username"></pre>
   <!--<router-link :to="'/equipo/' + $route.params.id + '/fotos'">Fotos</router-link>-->
   <!--<router-link :to="'/equipo/' + $route.params.id + '/bio'">Bio</router-link>-->
   <!--<router-link :to="{name:'fotos', params:{id: $route.params.id}}">Fotos</router-link>-->
@@ -14,6 +15,24 @@
 <script>
   export default {
     name: "Usuario",
+    data(){
+      return {
+        username:null,
+      }
+    },
+    created(){
+      this.obtenerUsername();
+    },
+    watch:{
+      '$route':'obtenerUsername'
+    },
+    methods:{
+      obtenerUsername(){
+        setTimeout(()=>{
+          this.username = this.$route.params.id + Math.floor(Math.random() * 1000);
+        },2000);
+      }
+    },
     beforeRouteEnter: ((to,from,next)=>{
       console.info('Antes de entrar');
       next((vm)=> console.log(vm))
