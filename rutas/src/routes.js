@@ -5,7 +5,7 @@ import UsuarioFotos from './component/UsuarioFotos';
 import UsuarioBio from './component/UsuarioBio';
 import Contacto from './component/Contacto';
 import NoEncontrado from './component/NoEncontrado';
-
+import {store} from "./store";
 
 export const routes = [
   {path: '/', component: Home, name:'home'},
@@ -16,7 +16,15 @@ export const routes = [
           bio: UsuarioBio,
           fotos: UsuarioFotos
         },name:'equipo'}
-    ] },
-  {path: '/contacto', component:Contacto, name:'contacto', props:{newsletter:true}},
+
+        ] },
+  {
+    beforeEnter: ((to,from,next) => {
+    console.log('Acceso a ruta contacto');
+    next(store.state.auth);
+    }),
+    path: '/contacto', component:Contacto, name:'contacto', props:{newsletter:true}
+    },
+
   {path: '*', component: NoEncontrado}
   ];
