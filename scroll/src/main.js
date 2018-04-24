@@ -1,7 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Info from './components/Info';
-import Bio from './components/Bio';
+// import Bio from './components/Bio';
+
+const Bio = resolve => {
+  require.ensure(['./components/Bio.vue'], ()=>{
+   resolve(require('./components/Bio'));
+  })
+};
 
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
