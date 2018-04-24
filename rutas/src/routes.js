@@ -23,7 +23,7 @@ export const routes = [
     console.log('Acceso a ruta contacto');
     next(store.state.auth);
     }),
-    path: '/contacto', component:Contacto, name:'contacto', props:{newsletter:true}
+    path: '/contacto', meta:{privado: true}, component:Contacto, name:'contacto', props:{newsletter:true}
     },
 
   {path: '*', component: NoEncontrado}

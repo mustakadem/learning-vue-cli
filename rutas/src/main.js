@@ -13,7 +13,11 @@ const router = new VueRouter({
 
 router.beforeEach((to,from,next)=> {
   console.log('Acceso a ruta global');
-  next();
+  if(to.meta.privado){
+    next(store.state.auth);
+  }else {
+    next();
+  }
 });
 new Vue({
   el: '#app',
